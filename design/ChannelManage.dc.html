@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+  <style>
+    :root{
+      --background: oklch(0.16 0.008 60);
+      --foreground: oklch(0.95 0.008 60);
+      --card: oklch(0.2 0.01 60);
+      --primary: oklch(0.72 0.19 45);
+      --primary-fg: oklch(0.17 0.02 45);
+      --secondary: oklch(0.26 0.012 60);
+      --muted: oklch(0.25 0.01 60);
+      --muted-fg: oklch(0.68 0.012 60);
+      --accent: oklch(0.3 0.03 45);
+      --destructive: oklch(0.65 0.2 25);
+      --border: oklch(0.3 0.01 60 / 70%);
+      --input: oklch(0.3 0.01 60);
+    }
+    *{box-sizing:border-box;}
+    body{margin:0;background:var(--background);color:var(--foreground);
+      font-family:"Geist",system-ui,-apple-system,"PingFang SC","Hiragino Sans GB",sans-serif;
+      -webkit-font-smoothing:antialiased;}
+    a{color:oklch(0.72 0.19 45);text-decoration:none;}
+    a:hover{color:oklch(0.79 0.17 45);}
+    .mono{font-family:"Geist Mono",ui-monospace,SFMono-Regular,monospace;}
+  </style>
+</helmet>
+<div style="width:390px;height:844px;overflow:hidden;position:relative;display:flex;flex-direction:column;background:var(--background);"><div style="flex-shrink:0;padding:44px 16px 0;"><div style="height:44px;display:flex;align-items:center;justify-content:space-between;gap:12px;"><div style="display:flex;align-items:center;gap:10px;min-width:0;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg><span style="font-size:17px;font-weight:600;">渠道</span></div><span style="width:44px;height:44px;display:flex;align-items:center;justify-content:flex-end;color:var(--muted-fg);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></div></div><div style="height:12px;"></div><div style="flex:1;overflow:hidden;padding:0 16px;display:flex;flex-direction:column;gap:14px;"><div style="font-size:12px;color:var(--muted-fg);line-height:1.6;">规则是全库共用的，切渠道只换数据源。<br>要让某条规则只管一个渠道，去规则里单独标。</div><div style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px;"><div style="display:flex;align-items:center;justify-content:space-between;gap:10px;"><div style="display:flex;align-items:center;gap:8px;min-width:0;"><span style="width:7px;height:7px;border-radius:999px;background:var(--primary);flex-shrink:0;"></span><span style="font-size:15px;font-weight:600;">Demo（公开测试流）</span></div><span style="color:var(--muted-fg);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="m9 18 6-6-6-6"/></svg></span></div><div class="mono" style="font-size:12px;color:var(--muted-fg);margin-top:6px;">test-streams.mux.dev</div><div style="display:flex;align-items:center;gap:8px;margin-top:10px;flex-wrap:wrap;"><span style="border:1px solid transparent;color:oklch(0.93 0.008 60);background:var(--secondary);font-size:11px;font-weight:500;padding:2px 8px;border-radius:999px;white-space:nowrap;">5 条</span><span style="border:1px solid var(--border);color:var(--muted-fg);background:transparent;font-size:11px;font-weight:500;padding:2px 8px;border-radius:999px;white-space:nowrap;">上次 06:00</span><span style="border:1px solid transparent;color:var(--primary);background:oklch(0.72 0.19 45 / 15%);font-size:11px;font-weight:500;padding:2px 8px;border-radius:999px;white-space:nowrap;">自动 · 每 6 小时</span></div></div><div style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px;"><div style="display:flex;align-items:center;justify-content:space-between;gap:10px;"><div style="display:flex;align-items:center;gap:8px;min-width:0;"><span style="width:7px;height:7px;border-radius:999px;background:var(--destructive);flex-shrink:0;"></span><span style="font-size:15px;font-weight:600;">某视频站</span></div><span style="color:var(--muted-fg);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="m9 18 6-6-6-6"/></svg></span></div><div class="mono" style="font-size:12px;color:var(--muted-fg);margin-top:6px;">example-site.com</div><div style="display:flex;align-items:center;gap:8px;margin-top:10px;flex-wrap:wrap;"><span style="border:1px solid transparent;color:oklch(0.93 0.008 60);background:var(--secondary);font-size:11px;font-weight:500;padding:2px 8px;border-radius:999px;white-space:nowrap;">128 条</span><span style="border:1px solid var(--border);color:var(--muted-fg);background:transparent;font-size:11px;font-weight:500;padding:2px 8px;border-radius:999px;white-space:nowrap;">上次 昨天 22:00</span></div><div style="margin-top:10px;display:flex;align-items:flex-start;gap:6px;color:var(--destructive);font-size:12px;line-height:1.5;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--destructive)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M12 9v4"/><path d="M12 17h.01"/><circle cx="12" cy="12" r="9"/></svg><span>抓取失败：列表页结构变了，标题选择器没匹配到（3 个样本全空）</span></div><div style="margin-top:10px;"><div style="background:transparent;color:var(--foreground);border:1px solid var(--border);height:38px;width:100%;border-radius:12px;display:flex;align-items:center;justify-content:center;gap:8px;font-size:15px;font-weight:500;">重新抓取</div></div></div><div style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px;"><div style="display:flex;align-items:center;justify-content:space-between;gap:10px;"><div style="display:flex;align-items:center;gap:8px;min-width:0;"><span style="width:7px;height:7px;border-radius:999px;background:var(--primary);flex-shrink:0;"></span><span style="font-size:15px;font-weight:600;">第三个渠道</span></div><span style="color:var(--muted-fg);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="m9 18 6-6-6-6"/></svg></span></div><div class="mono" style="font-size:12px;color:var(--muted-fg);margin-top:6px;">another-site.net</div><div style="display:flex;align-items:center;gap:8px;margin-top:10px;flex-wrap:wrap;"><span style="border:1px solid transparent;color:oklch(0.93 0.008 60);background:var(--secondary);font-size:11px;font-weight:500;padding:2px 8px;border-radius:999px;white-space:nowrap;">0 条</span><span style="border:1px solid var(--border);color:var(--muted-fg);background:transparent;font-size:11px;font-weight:500;padding:2px 8px;border-radius:999px;white-space:nowrap;">还没抓过</span></div></div></div></div>
+</x-dc>
+<script data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

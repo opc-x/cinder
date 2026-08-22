@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+  <style>
+    :root{
+      --background: oklch(0.16 0.008 60);
+      --foreground: oklch(0.95 0.008 60);
+      --card: oklch(0.2 0.01 60);
+      --primary: oklch(0.72 0.19 45);
+      --primary-fg: oklch(0.17 0.02 45);
+      --secondary: oklch(0.26 0.012 60);
+      --muted: oklch(0.25 0.01 60);
+      --muted-fg: oklch(0.68 0.012 60);
+      --accent: oklch(0.3 0.03 45);
+      --destructive: oklch(0.65 0.2 25);
+      --border: oklch(0.3 0.01 60 / 70%);
+      --input: oklch(0.3 0.01 60);
+    }
+    *{box-sizing:border-box;}
+    body{margin:0;background:var(--background);color:var(--foreground);
+      font-family:"Geist",system-ui,-apple-system,"PingFang SC","Hiragino Sans GB",sans-serif;
+      -webkit-font-smoothing:antialiased;}
+    a{color:oklch(0.72 0.19 45);text-decoration:none;}
+    a:hover{color:oklch(0.79 0.17 45);}
+    .mono{font-family:"Geist Mono",ui-monospace,SFMono-Regular,monospace;}
+  </style>
+</helmet>
+<div style="width:390px;height:844px;overflow:hidden;position:relative;display:flex;flex-direction:column;background:var(--background);"><div style="flex-shrink:0;padding:44px 16px 0;"><div style="height:44px;display:flex;align-items:center;justify-content:space-between;gap:12px;"><div style="display:flex;align-items:center;gap:10px;min-width:0;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg><span style="font-size:17px;font-weight:600;">接入新渠道</span></div><span style="width:22px;"></span></div></div><div style="height:10px;"></div><div style="flex:1;overflow:hidden;padding:0 16px;display:flex;flex-direction:column;gap:14px;"><div style="display:flex;flex-direction:column;gap:8px;"><div style="font-size:12px;font-weight:500;color:var(--muted-fg);">渠道首页地址</div><div class="mono" style="height:48px;border:1px solid var(--primary);background:oklch(0.2 0.01 60 / 60%);border-radius:12px;padding:0 14px;display:flex;align-items:center;font-size:14px;">https://example-site.com</div><div style="font-size:12px;color:var(--muted-fg);line-height:1.6;margin-top:2px;">只要首页，不用找列表页。剩下的探测来猜。</div></div><div style="display:flex;flex-direction:column;gap:8px;"><div style="font-size:12px;font-weight:500;color:var(--muted-fg);">探测中…</div><div style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px;"><div style="display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--border);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M20 6 9 17l-5-5"/></svg><span style="flex:1;font-size:13px;color:var(--foreground);">sitemap.xml</span><span class="mono" style="font-size:11px;color:var(--muted-fg);">1,284 个页面</span></div><div style="display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--border);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--muted-fg)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg><span style="flex:1;font-size:13px;color:var(--muted-fg);">RSS / Atom</span><span class="mono" style="font-size:11px;color:var(--muted-fg);">没有</span></div><div style="display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--border);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M20 6 9 17l-5-5"/></svg><span style="flex:1;font-size:13px;color:var(--foreground);">列表页规律</span><span class="mono" style="font-size:11px;color:var(--muted-fg);">/videos?page=N · 43 页</span></div><div style="display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--muted-fg)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M21 21v-5h-5"/></svg><span style="flex:1;font-size:13px;color:var(--muted-fg);">抽样解析</span><span class="mono" style="font-size:11px;color:var(--muted-fg);">2 / 3</span></div></div><div style="font-size:12px;color:var(--muted-fg);line-height:1.6;margin-top:2px;">没有 sitemap 也不影响，探测会退回去猜列表页的翻页规律。</div></div></div><div style="flex-shrink:0;padding:12px 16px 28px;border-top:1px solid var(--border);background:oklch(0.18 0.009 60);"><div style="background:var(--primary);color:var(--primary-fg);border:1px solid transparent;height:44px;width:100%;border-radius:12px;display:flex;align-items:center;justify-content:center;gap:8px;font-size:15px;font-weight:500;">下一步：确认字段</div></div></div>
+</x-dc>
+<script data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

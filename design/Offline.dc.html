@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+  <style>
+    :root{
+      --background: oklch(0.16 0.008 60);
+      --foreground: oklch(0.95 0.008 60);
+      --card: oklch(0.2 0.01 60);
+      --primary: oklch(0.72 0.19 45);
+      --primary-fg: oklch(0.17 0.02 45);
+      --secondary: oklch(0.26 0.012 60);
+      --muted: oklch(0.25 0.01 60);
+      --muted-fg: oklch(0.68 0.012 60);
+      --accent: oklch(0.3 0.03 45);
+      --destructive: oklch(0.65 0.2 25);
+      --border: oklch(0.3 0.01 60 / 70%);
+      --input: oklch(0.3 0.01 60);
+    }
+    *{box-sizing:border-box;}
+    body{margin:0;background:var(--background);color:var(--foreground);
+      font-family:"Geist",system-ui,-apple-system,"PingFang SC","Hiragino Sans GB",sans-serif;
+      -webkit-font-smoothing:antialiased;}
+    a{color:oklch(0.72 0.19 45);text-decoration:none;}
+    a:hover{color:oklch(0.79 0.17 45);}
+    .mono{font-family:"Geist Mono",ui-monospace,SFMono-Regular,monospace;}
+  </style>
+</helmet>
+<div style="width:390px;height:844px;overflow:hidden;position:relative;display:flex;flex-direction:column;background:var(--background);"><div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:44px 28px 0;gap:16px;text-align:center;"><div style="width:88px;height:88px;border-radius:999px;background:var(--secondary);display:flex;align-items:center;justify-content:center;color:var(--muted-fg);"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M12 20h.01"/><path d="M8.5 16.4a5 5 0 0 1 7 0"/><path d="M5 12.9a10 10 0 0 1 5.2-2.7"/><path d="M19 12.9a10 10 0 0 0-2-1.5"/><path d="M2 8.8a15 15 0 0 1 4.2-2.6"/><path d="M22 8.8a15 15 0 0 0-11.3-3.8"/><path d="m2 2 20 20"/></svg></div><div style="font-size:19px;font-weight:600;letter-spacing:-0.01em;margin-top:4px;">连不上家里那台 Mac</div><div style="font-size:13px;color:var(--muted-fg);line-height:1.7;">Cinder 只在你的 Tailnet 里跑。<br>检查一下 Tailscale 是不是断了。</div><div style="width:100%;margin-top:6px;"><div style="background:var(--primary);color:var(--primary-fg);border:1px solid transparent;height:44px;width:100%;border-radius:12px;display:flex;align-items:center;justify-content:center;gap:8px;font-size:15px;font-weight:500;">重试</div></div></div><div style="flex-shrink:0;padding:0 20px 40px;display:flex;flex-direction:column;gap:12px;"><div style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px;"><div style="display:flex;flex-direction:column;gap:8px;"><div style="font-size:14px;font-weight:500;">离线也能翻库</div><div style="font-size:12px;color:var(--muted-fg);line-height:1.65;">128 条元数据存在手机上，能浏览、能改规则。<br>播放要等连上 —— 视频从来不落本地。</div><div style="margin-top:4px;"><div style="background:transparent;color:var(--foreground);border:1px solid var(--border);height:42px;width:100%;border-radius:12px;display:flex;align-items:center;justify-content:center;gap:8px;font-size:15px;font-weight:500;">浏览已缓存的库</div></div></div></div><div class="mono" style="text-align:center;font-size:11px;color:var(--muted-fg);">上次同步 2 小时前 · 06:12</div></div></div>
+</x-dc>
+<script data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

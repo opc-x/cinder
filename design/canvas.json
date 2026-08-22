@@ -1,0 +1,22 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html",          "x": 0,    "y": 0,    "w": 390, "h": 844, "title": "网格库" },
+    { "file": "Channels.dc.html",      "x": 470,  "y": 0,    "w": 390, "h": 844, "title": "渠道切换" },
+    { "file": "Watch.dc.html",         "x": 940,  "y": 0,    "w": 390, "h": 844, "title": "播放页" },
+    { "file": "Offline.dc.html",       "x": 1410, "y": 0,    "w": 390, "h": 844, "title": "离线壳" },
+    { "file": "Rules.dc.html",         "x": 0,    "y": 1000, "w": 390, "h": 844, "title": "打字说偏好" },
+    { "file": "RuleConfirm.dc.html",   "x": 470,  "y": 1000, "w": 390, "h": 844, "title": "确认模型的理解" },
+    { "file": "ChannelManage.dc.html", "x": 0,    "y": 2000, "w": 390, "h": 844, "title": "渠道管理" },
+    { "file": "ChannelAdd.dc.html",    "x": 470,  "y": 2000, "w": 390, "h": 844, "title": "录入 + 探测" },
+    { "file": "ChannelMap.dc.html",    "x": 940,  "y": 2000, "w": 390, "h": 844, "title": "确认字段" }
+  ],
+  "annotations": [
+    { "id": "row-browse", "x": 0, "y": -140, "w": 460,
+      "text": "主路径 · 浏览\n渠道切换在右上角，跟多语言选择一个位置。切了只换数据源，规则和界面全不变。\n播放页没有底部 tab —— 它是下一层。" },
+    { "id": "row-rules", "x": 0, "y": 860, "w": 460,
+      "text": "规则 · 你打字，本地模型翻译，你确认\n规则的身份是你说的那句话，不是一个 id。条件树折叠着，不对的时候才展开。\n确认屏拿现有的 133 条真跑一遍 —— 这是唯一能发现模型理解错了的地方。" },
+    { "id": "row-channels", "x": 0, "y": 1860, "w": 460,
+      "text": "渠道管理 · 从切换器进，不占底部 tab\n录 root → 探测 → 点选确认。探测会说清哪几个字段它不确定，只有那两处要你动手。" }
+  ],
+  "launch": { "view": "canvas" }
+}

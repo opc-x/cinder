@@ -11,6 +11,8 @@ next-env.d.ts
 /data/*.db
 /data/*.db-*
 /data/*.bak
+__pycache__/
+*.pyc
 
 /tsconfig.tsbuildinfo
 
